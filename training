@@ -19,7 +19,7 @@
         text-align: center;
         gap: 100px;
         background-color: #6a4c93;
-        opacity: 70%;
+        border-radius: 20px;
 
 
 
@@ -49,43 +49,51 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
+        border-radius:20px;
+    }
+    .imgsec{
+        padding: 20px 40px;
     }
     .logo{
-        background-color: #6a4c93;
         border-radius: 50%;
         width: 120px;
         height: 110px;
         border: aliceblue solid 4px;
+        background-image: url("gettyimages-642194368-2048x2048.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        
     }
     .navelement{
-        font-size: 50px;
+        font-size: 30px;
         padding: 40px;
     }
         
     .navelement a {
-        text-decoration: none;
+        text-decoration:underline;
         color: aliceblue;
-          border-right: 2px solid whitesmoke; 
           padding: 40px;
+          height: 50px;
     }
 
-   .navelement a:last-child {
-    border-right: none;
-   }
+   
     .si1{
         height: 100px;
         width: 700px;
         color: aliceblue;
         font-size: x-large;
         margin-bottom: 70px;
+        padding: 50px;
+
 
     }
     .si2{
         margin-top: 50px;
         height: 150px;
-        width: 7s00px;
-        color: blue;
+        width: 700px;
+        color:aliceblue;
         font-size: x-large;
+        padding: 50px;
 
     }
     .read{
@@ -94,8 +102,9 @@
         padding: 50px;
     }
     .gridsection{
-    padding: 40px 60px;
+    padding: 20px 60px;
      background-color: #6a4c93;
+     border-radius: 20px;
 
     }
     .grid{
@@ -124,6 +133,43 @@
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  font-size: 50px;
  text-align: center;
+}
+.lavender-specs{
+    padding: 50px 40px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.lavender-specs h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6a4c93; /* violet lavande */
+}
+
+.lavender-specs table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lavender-specs th, 
+.lavender-specs td{
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.lavender-specs th{
+    background-color: #6a4c93;
+    color: white;
+}
+
+.lavender-specs tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.lavender-specs tr:hover{
+    background-color: #e0d4f7;
 }
 
     </style>
@@ -156,7 +202,7 @@
     </div>
     </section>
    
-    <section>
+    <section class="imgsec">
        <div class="sectionimage">
     <div class="si1">
         Discover the purity of lavender — carefully cultivated to bring calm, balance,
@@ -199,7 +245,45 @@
         </div>
     </div>
 </section>
+<section class="lavender-specs">
+    <h2>Lavender Specifications by Country</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Climate</th>
+                <th>Lavender Type</th>
+                <th>Uses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>France</td>
+                <td>Mediterranean</td>
+                <td>Lavandula angustifolia</td>
+                <td>Essential oils, perfumes, soaps</td>
+            </tr>
+            <tr>
+                <td>Italy</td>
+                <td>Mediterranean</td>
+                <td>Lavandula x intermedia</td>
+                <td>Aromatherapy, culinary, decoration</td>
+            </tr>
+            <tr>
+                <td>Spain</td>
+                <td>Mediterranean</td>
+                <td>Lavandula stoechas</td>
+                <td>Essential oils, landscaping, crafts</td>
+            </tr>
+            <tr>
+                <td>United Kingdom</td>
+                <td>Temperate</td>
+                <td>Lavandula angustifolia</td>
+                <td>Gardening, culinary, wellness</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
-    
 </body>
 </html>
